@@ -1,0 +1,22 @@
+@font-face {
+    font-family: titles;
+    src: url(../fonts/BlackOpsOne-Regular.ttf);
+}
+
+
+/* BASIC */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+    font-size: 15px;
+}
+
+body {
+    background-image: url(../Media/Image/Ladrillos\ tileables.png);
+    background-repeat: repeat;
+    background-position: center;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="SleepySkullStudio" content="blablabla">
+    <meta name="description" content="CoinsOnly Oficial Web Page">
+    <title>Coins Only</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/Styles.css" type="text/css">
+</head>
+
+<!-- ------------------------------------------ -->
+
+<body>
+
+    <header>
+                    
+        <div class="navbar">
+            <div class="logo"> <a href="Index.html"><img src="media/image/Logo Coins Only Final.png" alt=""></a></div>
+            <ul class="links">
+                <li> <a href="characters.html">CHARACTERS</a> </li>
+                <li> <a href="shop.html">SHOP</a> </li>
+                <li> <a href="contact.html">ABOUT US </a></li>
+                <li> <a href="faq.html">FAQ</a> </li>
+                <li><a href="pruebas.html">pruebas</a></li>
+            </ul>
+            
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="dropdown_menu">
+                <li> <a href="characters.html">Characters</a> </li>
+                <li> <a href="shop.html">Shop</a> </li>
+                <li> <a href="contact.html">Contact </a></li>
+                <li> <a href="faq.html">FAQ</a></li>  
+            </div>
+        </div>
+
+    </header>
+    
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')        
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')        
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+        
+        toggleBtn.onclick = function (){
+            dropDownMenu.classList.toggle('open')
+            const isOpen =  dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+        
+    </script>
+
+</body>
+
+<!-- ------------------------------------------ -->
+
+<main>
+
+    <section id="main">
+        <h1>COINS ONLY OFFICIAL</h1>
+        <p>Inspirado en juegos como "Papers Please" y, visual y temáticamente, en juegos como "Have a Nice Death", este juego  te coloca como un trabajador explotado laboralmente en un mundo muy caótico y diferente del que vives: clientes muy variopintos y diferentes, objetos mágicos o... mágicamente alterados, una paga muy baja, un jefe que siempre buscará cada día nuevos métodos que te mantendrán a raya, una paga muy muy baja, la satisfacción propia tras recibir una paga MUY MUY MUY baja, etc.
+        <br>¿Te atreves a experimentar la vida de una cajero en un sitio tan extraño por 5 días sin que te despidan? 
+        <br>(Por las noches no trabajas porque hay un tal oso Alfredo que se ocupa de todo, espero que en este hermoso año 87 no haga nada raro)</p>
+    </section>
+</main>
+
+<!-- ------------------------------------------ -->
+
+<Footer>
+    <div> Contact 01</div>
+    <div> Contact 02</div>
+    <div> Contact 03</div>
+
+</Footer>
+
+
+</html>
