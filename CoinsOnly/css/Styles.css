@@ -102,10 +102,14 @@ section#main{
 }
 
 .faq #main{
-    background-color: black;
+    /* background-image: url(../Media/Image/Pizarra.png); echa un vistazo a ver como puedes hacer que la imagen quede bien  */
+    background-color: rgba(0, 0, 0,1);
+    /* si prefieres el fondo negro, yo bajaría la opacidad, a un 0.25 o 0.5 */
     border-radius: 10px;
+    /* pondría el radius de 15-25px mas menos */
     padding: 50px;
     margin: 100px;
+    /* demasiado fondo para poco texto, el margin y el padding es demasiado exagerado, en px, no es responsive */
 }
 
 .faq #main h1{
@@ -119,6 +123,7 @@ section#main{
     font-size: 2rem;
     margin-bottom: 1rem;
     color: rgb(17, 87, 148);
+    /* muy oscuro si vamos a poner una imagen de fondo o cambiar la transparencia del color */
     font-weight: bold;
     text-align: left;
 }
