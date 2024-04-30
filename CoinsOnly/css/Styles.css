@@ -118,15 +118,37 @@ section#faq_main{
     font-size: 2rem;
     margin-top: 1rem;
     color: rgb(255, 255, 255);
-    /* muy oscuro si vamos a poner una imagen de fondo o cambiar la transparencia del color */
     font-weight: bold;
-    text-align: left;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #main_faq p{
-    text-align: left;
+    text-align: center;
     color: rgb(255, 255, 255);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0.5em;
 }
+
+#main_faq a{
+    text-align: center;
+    color: #ff8800;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0.5em;
+}
+
+#main_faq a:hover{
+    text-align: center;
+    color: #9e5400;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0.5em;
+}
+
+
 
 /* FAQ MAIN antiguo, por si acaso la cago */
 
