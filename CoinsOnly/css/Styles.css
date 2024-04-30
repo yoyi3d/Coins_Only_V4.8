@@ -43,9 +43,7 @@ a:hover{
 header {
     position: relative;
     padding: 1rem 2rem;
-    background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,0.7287289915966386) 25%, rgba(0,212,255,0) 100%);
-
 }
 
 .navbar{
@@ -56,7 +54,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .navbar .logo a img{
@@ -103,8 +100,9 @@ section#faq_main{
 }
 .columnas{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     align-content: center;
+    gap: 1rem;
 }
 
 #main_faq h1{
