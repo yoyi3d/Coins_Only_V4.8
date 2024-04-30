@@ -101,9 +101,8 @@ section#main{
     margin-bottom: 1rem;
 }
 
-.faq #main{
-    /* background-image: url(../Media/Image/Pizarra.png); echa un vistazo a ver como puedes hacer que la imagen quede bien  */
-    background-color: rgba(0, 0, 0,1);
+.faq #main_faq{
+    background-image: url(../Media/Image/Pizarra.png);
     /* si prefieres el fondo negro, yo bajaría la opacidad, a un 0.25 o 0.5 */
     border-radius: 10px;
     /* pondría el radius de 15-25px mas menos */
@@ -112,24 +111,25 @@ section#main{
     /* demasiado fondo para poco texto, el margin y el padding es demasiado exagerado, en px, no es responsive */
 }
 
-.faq #main h1{
+.faq #main_faq h1{
     font-size: 3rem;
     margin-bottom: 1rem;
     text-align: left;
     color: #FF8A00;
 }
 
-.faq #main h2{
+.faq #main_faq h2{
     font-size: 2rem;
-    margin-bottom: 1rem;
-    color: rgb(17, 87, 148);
+    margin-top: 1rem;
+    color: rgb(255, 255, 255);
     /* muy oscuro si vamos a poner una imagen de fondo o cambiar la transparencia del color */
     font-weight: bold;
     text-align: left;
 }
 
-.faq #main p{
+.faq #main_faq p{
     text-align: left;
+    color: rgb(255, 255, 255);
 }
 
 /* MAIN antiguo, por si acaso la cago */
