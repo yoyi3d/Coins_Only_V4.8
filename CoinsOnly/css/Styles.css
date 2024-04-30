@@ -56,9 +56,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
-    z-index: 9999;
-    top: 0;
+
 }
 
 .navbar .logo a img{
@@ -81,9 +79,9 @@ header {
 }
 
 
-/* MAIN */
+/*  FAQ MAIN */
 
-section#main{
+section#faq_main{
     height: calc(100vh - 60px);
     padding: 25%;
     display: flex;
@@ -92,19 +90,20 @@ section#main{
     justify-content: center;
     text-align: center;
     color: white;
+
 }
 
-#main h1{
+#faq_main h1{
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-#main h2{
+#faq_main h2{
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
-.faq #main_faq{
+#main_faq{
     background-image: url(../Media/Image/Pizarra.png);
     /* si prefieres el fondo negro, yo bajaría la opacidad, a un 0.25 o 0.5 */
     border-radius: 10px;
@@ -114,14 +113,14 @@ section#main{
     /* demasiado fondo para poco texto, el margin y el padding es demasiado exagerado, en px, no es responsive */
 }
 
-.faq #main_faq h1{
+#main_faq h1{
     font-size: 3rem;
     margin-bottom: 1rem;
     text-align: left;
     color: #FF8A00;
 }
 
-.faq #main_faq h2{
+#main_faq h2{
     font-size: 2rem;
     margin-top: 1rem;
     color: rgb(255, 255, 255);
@@ -130,14 +129,14 @@ section#main{
     text-align: left;
 }
 
-.faq #main_faq p{
+#main_faq p{
     text-align: left;
     color: rgb(255, 255, 255);
 }
 
-/* MAIN antiguo, por si acaso la cago */
+/* FAQ MAIN antiguo, por si acaso la cago */
 
-/* section#main{
+section#placeholder{
     height: calc(100vh - 60px);
     padding: 25%;
     display: flex;
@@ -148,15 +147,15 @@ section#main{
     color: white;
 }
 
-#main h1{
+#placeholder h1{
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-#main h2{
+#placeholder h2{
     font-size: 2rem;
     margin-bottom: 1rem;
-} */
+}
 
 
 /* DROPDOWN */
