@@ -3,6 +3,16 @@
     src: url(../fonts/BlackOpsOne-Regular.ttf);
 }
 
+@font-face {
+    font-family: "Kanit";
+    src: url(/fonts/Kanit/Kanit-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Source_Code";
+    src: url(/fonts/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf);
+}
+
 /* el humor absurdo: pene */
 
 /* BASIC */
@@ -44,6 +54,7 @@ header {
     position: relative;
     padding: 1rem 2rem;
     background: linear-gradient(180deg, rgba(0,0,0,0.7287289915966386) 25%, rgba(0,212,255,0) 100%);
+    font-family: "Kanit";
 }
 
 .navbar{
@@ -110,6 +121,7 @@ section#faq_main{
     margin-bottom: 1rem;
     text-align: center;
     color: #FF8A00;
+    font-family: "Kanit";
 }
 
 #main_faq h2{
@@ -120,6 +132,7 @@ section#faq_main{
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
+    font-family: "Kanit";
 }
 
 #main_faq p{
@@ -128,6 +141,7 @@ section#faq_main{
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 0.5em;
+    font-family: "Kanit";
 }
 
 #main_faq a{
@@ -136,16 +150,64 @@ section#faq_main{
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 0.5em;
+    font-family: "Kanit";
 }
 
 #main_faq a:hover{
     text-align: center;
-    color: #9e5400;
+    color: #dd7600;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 0.5em;
+    text-decoration: underline;
 }
 
+/* Si estiras mucho el recuadro de texto, se rompe, por lo que quiero preguntarle a Adrián */
+
+.main_formulario{
+    align-content: center;
+    display: flex;
+    background-color: #46607a;
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 10px 23px 37px black;
+    display: flex;
+}
+
+.main_formulario h1{
+    font-size: 2em;
+    margin-bottom: 15px;
+    font-family: "Kanit";
+}
+
+.Ask_us_text{
+    font-family: "Kanit";
+    font-size: 1.25em;
+}
+
+.cuadro_pregunta{
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #374a5e;
+    border: 0.1em solid white;
+    color: white;
+}
+
+.enviar_button{
+    width: 100%;
+    background-color: #5380b1;
+    padding: 10px;
+    color: white;
+    border: none;
+    font-family: "Kanit";
+}
+
+.enviar_button:hover{
+    background-color: #486e97;
+}
 
 
 /* FAQ MAIN antiguo, por si acaso la cago */
@@ -190,7 +252,6 @@ section#placeholder{
 
 .dropdown_menu.open{
     height: 180px;
-
 }
 
 .dropdown_menu li{
@@ -285,7 +346,6 @@ section#placeholder{
     font-weight: bold;
 }
 
-
 /* SHOP */
 
 #shop{
@@ -316,6 +376,15 @@ section#placeholder{
     border-radius: 15px;
 }
 
+/* ABOUT US */
+
+/* #about_us{
+    background-color: #dd7600;
+}
+
+.victor{
+    background-color: #374a5e;
+} */
 
 /* FOOTER */
 
