@@ -86,6 +86,170 @@ header {
     display: none;
 }
 
+/* DROPDOWN */
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+}
+
+.dropdown_menu.open{
+    height: 180px;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* RESPONSIVE DROPDOWN */
+
+@media (max-width: 600px){
+    .navbar .links{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+@media (max-width: 400px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+}
+
+/* Place holder general */
+
+section#placeholder{
+    height: calc(100vh - 60px);
+    padding: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+#placeholder h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#placeholder h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+/* CHARACTER GALLERY */
+
+#gallery{
+    padding: 1rem;
+
+}
+
+#gallery ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    gap: 5px;
+
+}
+
+#gallery ul li{
+    height: 35vh;
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gallery ul li img{
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+#gallery ul li .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.300);
+    color: white;
+    width: 100%;
+    height: 100%;
+    
+    opacity: 0;
+    transition: 0.3s;
+}
+
+#gallery ul li:hover .overlay{
+    opacity: 100%;
+
+}
+
+#gallery ul li .overlay span{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* SHOP */
+
+#shop{
+    padding: 1rem;
+}
+
+.shop_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.product{
+    box-shadow:0px 7px 7px rgba( 0, 0, 0, 0.5);
+    border-radius: 15px;
+    text-align: center;
+    align-content: center;
+    background-color: aliceblue;
+    color: black;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.product img{
+    max-width: 100%;
+    margin: 0.5rem;
+    border-radius: 15px;
+}
 
 /*  FAQ  */
 
@@ -108,8 +272,10 @@ section#faq_main{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    box-shadow: 5px 17px 37px black;
 }
-.columnas{
+
+.columnas_faq{
     display: flex;
     /* align-items: center; */
     align-content: center;
@@ -209,12 +375,11 @@ section#faq_main{
     background-color: #486e97;
 }
 
+/* ABOUT US */
 
-/* FAQ MAIN antiguo, por si acaso la cago */
-
-section#placeholder{
+section#main_about_us{
     height: calc(100vh - 60px);
-    padding: 25%;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -223,168 +388,73 @@ section#placeholder{
     color: white;
 }
 
-#placeholder h1{
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-#placeholder h2{
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-
-/* DROPDOWN */
-
-.dropdown_menu{
-    display: none;
-    position: absolute;
-    right: 2rem;
-    top: 60px;
-    height: 0;
-    width: 300px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
-}
-
-.dropdown_menu.open{
-    height: 180px;
-}
-
-.dropdown_menu li{
-    padding: 0.7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/* RESPONSIVE DROPDOWN */
-
-@media (max-width: 600px){
-    .navbar .links{
-        display: none;
-    }
-
-    .navbar .toggle_btn{
-        display: block;
-    }
-
-    .dropdown_menu{
-        display: block;
-    }
-}
-
-@media (max-width: 400px){
-    .dropdown_menu{
-        left: 2rem;
-        width: unset;
-    }
-}
-
-
-/* CHARACTER GALLERY */
-
-#gallery{
-    padding: 1rem;
-
-}
-
-#gallery ul{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-    gap: 5px;
-
-}
-
-#gallery ul li{
-    height: 35vh;
-    flex-grow: 1;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#gallery ul li img{
-    max-height: 100%;
-    min-width: 100%;
-    object-fit: cover;
-    vertical-align: bottom;
-}
-
-#gallery ul li .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: rgba(0, 0, 0, 0.300);
-    color: white;
+#about_us{
     width: 100%;
     height: 100%;
-    
-    opacity: 0;
-    transition: 0.3s;
-}
-
-#gallery ul li:hover .overlay{
-    opacity: 100%;
-
-}
-
-#gallery ul li .overlay span{
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-/* SHOP */
-
-#shop{
+    background-color: rgb(131, 30, 30);
+    border-radius: 15px;
     padding: 1rem;
-}
-
-.shop_container{
+    margin: 3rem;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
-.product{
-    box-shadow:0px 7px 7px rgba( 0, 0, 0, 0.5);
-    border-radius: 15px;
-    text-align: center;
+.columnas_about_us{
+    flex-grow: 1;
+    display: flex;
     align-content: center;
-    background-color: aliceblue;
-    color: black;
-    font-size: 20px;
-    overflow: hidden;
-}
-
-.product img{
-    max-width: 100%;
-    margin: 0.5rem;
-    border-radius: 15px;
-}
-
-/* ABOUT US */
-
-/* #about_us{
-    background-color: #dd7600;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .victor{
-    background-color: #374a5e;
-} */
+    margin-bottom: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.aster{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+.yoyi{
+    margin-bottom: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.miguel{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.samu{
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.david{
+    display: flex;
+    align-items: center;
+}
+
+.texto {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
 
 /* FOOTER */
 
