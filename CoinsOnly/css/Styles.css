@@ -328,9 +328,12 @@ section#faq_main{
     text-decoration: underline;
 }
 
-/* Si estiras mucho el recuadro de texto, se rompe, por lo que quiero preguntarle a Adrián */
+/* Formulario */
 
 .main_formulario{
+    width: 400px;
+    margin: auto;
+    margin-bottom: 50px;
     align-content: center;
     display: flex;
     background-color: #46607a;
