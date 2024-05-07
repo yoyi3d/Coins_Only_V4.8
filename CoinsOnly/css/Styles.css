@@ -91,66 +91,6 @@ section#hometitle{
     font-family: "Kanit";
 }
 
-/* CHARACTER GALLERY */
-
-#gallery{
-    padding: 1rem;
-
-}
-
-#gallery ul{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-    gap: 5px;
-
-}
-
-#gallery ul li{
-    height: 35vh;
-    flex-grow: 1;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#gallery ul li img{
-    max-height: 100%;
-    min-width: 100%;
-    object-fit: cover;
-    vertical-align: bottom;
-}
-
-#gallery ul li .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: rgba(0, 0, 0, 0.300);
-    color: white;
-    width: 100%;
-    height: 100%;
-    
-    opacity: 0;
-    transition: 0.3s;
-}
-
-#gallery ul li:hover .overlay{
-    opacity: 100%;
-
-}
-
-#gallery ul li .overlay span{
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
 /* SHOP */
 
 #shop{
@@ -310,114 +250,65 @@ section#faq_main{
 
 /* ABOUT US */
 
-section#main_about_us{
+#main_about_us {
     padding: 1rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     color: white; 
-    background-color: rebeccapurple;
 }
 
-#about_us{
+#about_us {
     border-radius: 15px;
     padding: 1rem;
     margin: 3rem;
-    display: grid;
     gap: 0.5rem;
     flex: 1;
     display: flex;
+}
+
+.columnas_about_us {
+    flex-grow: 1;
+    display: flex;
     flex-direction: column;
 }
 
-.columnas_about_us{
-    flex-grow: 1;
+.row1, .row2 {
     display: flex;
-    align-content: center;
     gap: 1rem;
 }
 
-.columnas_about_us>div>div>img{
-    height: 60%;
-    width: 60%;
-}
-
-.columna1{
-    flex-direction: column;
-    align-content: baseline;
-}
-
-.columna2{
+.victor, .aster, .yoyi, .miguel, .samu, .david {
+    flex: 1;
+    position: relative;
+    display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-
-.columna3{
-    flex-direction: column;
-    align-items: end;
-}
-
-.victor{
     margin-bottom: 40px;
-    position: relative;
-    display: flex;
-    align-items: center;
 }
 
-.aster{
-    position: relative;
-    display: flex;
-    align-items: center;
-
+.textos {
+    margin-left: 20px;
 }
 
-.yoyi{
-    margin-bottom: 40px;
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.miguel{
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.samu{
-    margin-bottom: 40px;
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.david{
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-
-.texto_nombre {
+.texto_nombre, .texto_descripcion {
     background-color: black;
     color: white;
     padding: 10px;
     border-radius: 5px;
-    margin-left: 20px;
     display: flex;
+    flex-direction: column;
 }
 
 .texto_descripcion {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    margin-left: 20px;
-    display: flex;
     margin-top: 15px;
+}
+
+.texto_nombre{
+    margin-top: 1em;
+}
+
+#about_us a:hover{
+    color: #dd7600;
+    text-decoration: underline;
 }
 
 /* FOOTER */
