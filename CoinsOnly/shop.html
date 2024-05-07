@@ -38,6 +38,34 @@
         </div>
 
     </header>
+
+    
+    <style>
+        #fakebutton {
+          position: fixed;
+          z-index: 9999; 
+        }
+      </style>
+
+<img id="fakebutton" src="media/image/shop/popup.PNG" alt="Esto es un POPUP">
+
+<script>
+    const f = document.getElementById("fakebutton");
+  
+    function randomizeInterval() {
+      return Math.floor(Math.random() * (2000 - 500 + 1)) + 100; 
+    }
+  
+    setInterval(() => {
+      // Change position
+      const clientX = Math.random() * window.innerWidth;
+      const clientY = Math.random() * window.innerHeight;
+      f.style.transform = `translateY(${clientY - 25}px) translateX(${clientX - 25}px)`;
+    }, randomizeInterval()); // Initial random time interval
+  
+  </script>
+      
+      
     
     <script>
         const toggleBtn = document.querySelector('.toggle_btn')        
@@ -55,14 +83,39 @@
         
     </script>
 
-</body>
-
 <main>
     <section id="placeholder">
-        <h1>SHOP</h1>
-        <h2>WIP</h2>
+        <h1>LA FANTABULOSA TIENDA DE LOS MISTERIOS</h1>
+        <section id="products">
+
+            <div id="slide_container">
+
+            <div class="slide-element-1">
+                <img class="slide-image" src="https://picsum.photos/720/360">
+                <p class="slide-text">Slide text 1</p>
+            </div>
+
+            <div class="slide-element-2">
+                <img class="slide-image" src="https://picsum.photos/720/360">
+                <p class="slide-text">Slide text 2</p>
+            </div>
+
+            <div class="slide-element-3">
+                <img class="slide-image" src="https://picsum.photos/720/360">
+                <p class="slide-text">Slide text 3</p>
+            </div>
+              
+            </div>
+
+        </section>
+
+        <br>
+        <br>
+        <br>
+
         <p>coming soon</p>
     </section>
+
     <section id="shop">
     
         <div class="shop_container">
@@ -118,4 +171,8 @@
     <div> Contact 03</div>
 
 </Footer>
+
+</body>
+
+
 </html>
