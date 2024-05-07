@@ -14,47 +14,21 @@
 </head>
 <body>
     <header>   
-        <div class="navbar">
-            <div class="logo"> <a href="Index.html"><img src="media/image/Logo Coins Only Final.png" alt=""></a></div>
-            <ul class="links">
-                <li> <a href="characters.html">CHARACTERS</a> </li>
-                <li> <a href="shop.html">SHOP</a> </li>
-                <li> <a href="contact.html">ABOUT US </a></li>
-                <li> <a href="faq.html">FAQ</a> </li>
+        
+        <a href="Index.html"> <img  class="logo"  src="media/Image/Logo Coins Only Final.png" alt="xD"></a>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="characters.html">CHARACTERS</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="contact.html">ABOUT US</a></li>
+                <li><a href="faq.html">FAQ</a></li>
             </ul>
-            
-                <div class="toggle_btn">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-            </div>
-
-            <div class="dropdown_menu">
-                <li> <a href="characters.html">Characters</a> </li>
-                <li> <a href="shop.html">Shop</a> </li>
-                <li> <a href="contact.html">Contact </a></li>
-                <li> <a href="faq.html">FAQ</a> </li>  
-            </div>
-        </div>
+        </nav>
 
         
     </header>
     
-    <script>
-        const toggleBtn = document.querySelector('.toggle_btn')        
-        const toggleBtnIcon = document.querySelector('.toggle_btn i')        
-        const dropDownMenu = document.querySelector('.dropdown_menu')
-        
-        toggleBtn.onclick = function (){
-            dropDownMenu.classList.toggle('open')
-            const isOpen =  dropDownMenu.classList.contains('open')
-
-            toggleBtnIcon.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
-        }
-        
-    </script>
-
+    
 <main>
     <section id="faq_main">
         <div id="main_faq">
