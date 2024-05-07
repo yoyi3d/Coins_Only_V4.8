@@ -1,18 +1,8 @@
-@font-face {
-    font-family: titles;
-    src: url(../fonts/BlackOpsOne-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
-@font-face {
-    font-family: "Kanit";
-    src: url(/fonts/Kanit/Kanit-SemiBold.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
 
-@font-face {
-    font-family: "Source_Code";
-    src: url(/fonts/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf);
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 /* BASIC */
 
 *{
@@ -26,12 +16,14 @@ body {
     background-image: url(../Media/Image/Ladrillos\ tileables.png);
     background-repeat: repeat;
     background-position: center;
+    position: relative;
+    min-height: 100vh;
 }
 
 /* NAVEGADOR */
 
 li, a{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Source Code Pro", sans-serif;
     font-weight: 500;
     font-size: 18px;
     text-decoration: none;
@@ -77,11 +69,9 @@ img.logo{
 /* DROPDOWN */
 
 
-/* Place holder general */
+/* HOMEPAGE */
+section#hometitle{
 
-section#placeholder{
-    height: calc(100vh - 60px);
-    padding: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,16 +80,16 @@ section#placeholder{
     color: white;
 }
 
-#placeholder h1{
+#hometitle h1{
+    font-family: "Black Ops One";
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-#placeholder h2{
-    font-size: 2rem;
-    margin-bottom: 1rem;
+#hometitle p{
+    font-size: 1rem;
+    font-family: "Kanit";
 }
-
 
 /* CHARACTER GALLERY */
 
@@ -433,17 +423,19 @@ section#main_about_us{
 /* FOOTER */
 
 footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.Footer{
     display: flex;
     justify-content: space-evenly;
     padding: 1.5rem;
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,0.7287289915966386) 25%, rgba(0,212,255,0) 100%);
-    position: absolute;
-    width: 100%;
-    bottom: -99999;
-}
-
-footer div{
     color: white;
 }
 
