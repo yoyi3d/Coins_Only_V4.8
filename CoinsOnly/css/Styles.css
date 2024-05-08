@@ -248,6 +248,17 @@ section#faq_main{
     background-color: #486e97;
 }
 
+@media only screen and (max-width: 1115px){
+    #main_faq{
+        background-color: aquamarine;
+        padding: 1rem;
+        margin: 3rem;
+        flex-direction: column;
+        gap: 0.5rem;
+        box-shadow: 5px 17px 37px black;
+    }    
+}
+
 /* ABOUT US */
 
 #main_about_us {
