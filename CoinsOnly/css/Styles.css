@@ -124,7 +124,6 @@ section#hometitle{
 /*  FAQ  */
 
 section#faq_main{
-    height: calc(100vh - 60px);
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -132,6 +131,7 @@ section#faq_main{
     justify-content: center;
     text-align: center;
     color: white;
+    
 }
 
 #main_faq{
@@ -145,11 +145,19 @@ section#faq_main{
     box-shadow: 5px 17px 37px black;
 }
 
-.columnas_faq{
+.columnas_faq {
     display: flex;
-    /* align-items: center; */
     align-content: center;
     gap: 1rem;
+}
+
+@media screen and (max-width: 1150px) {
+    .columnas_faq {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        display: flex;
+    }
 }
 
 #main_faq h1{
@@ -204,25 +212,33 @@ section#faq_main{
     width: 400px;
     margin: auto;
     margin-bottom: 50px;
-    align-content: center;
     display: flex;
     background-color: #46607a;
     padding: 30px;
     margin-top: 50px;
     border-radius: 10px;
     box-shadow: 10px 23px 37px black;
-    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .main_formulario h1{
     font-size: 2em;
     margin-bottom: 15px;
     font-family: "Kanit";
+    width: 100%;
+    max-width: 400px;
+    color: white;
+    text-align: center;
 }
 
 .Ask_us_text{
     font-family: "Kanit";
     font-size: 1.25em;
+    color: white;
+    height: auto;
+    margin: auto;
 }
 
 .cuadro_pregunta{
@@ -233,6 +249,8 @@ section#faq_main{
     background-color: #374a5e;
     border: 0.1em solid white;
     color: white;
+    resize: vertical;
+    overflow-y: auto;
 }
 
 .enviar_button{
@@ -248,17 +266,15 @@ section#faq_main{
     background-color: #486e97;
 }
 
-@media only screen and (max-width: 1115px){
-    #main_faq{
-        background-color: aquamarine;
-        padding: 1rem;
-        margin: 3rem;
+@media only screen and (max-width: 450px){
+    .columnas_faq{
+        display: flex;
         flex-direction: column;
-        gap: 0.5rem;
-        box-shadow: 5px 17px 37px black;
-    }    
+        align-items: center;
+        gap: 2rem;
+    }
+    
 }
-
 /* ABOUT US */
 
 #main_about_us {
