@@ -624,10 +624,8 @@ section#cartas{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-
-    gap: 3rem;
-    margin: 1rem;
+    justify-content: space-around;
+    margin-top: 5rem;
 }
 
 .card{
@@ -635,6 +633,7 @@ section#cartas{
     width: 375px;
     height: 525px;
 }
+
 .card .face{
     position: absolute;
     width: 100%;
