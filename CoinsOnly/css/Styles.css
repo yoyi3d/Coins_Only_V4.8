@@ -1,3 +1,7 @@
+:root{ 
+    --slide-time: 3s;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
@@ -97,6 +101,27 @@ section#hometitle{
     padding: 1rem;
 }
 
+section#shoptitle{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+#shoptitle h1{
+    font-family: "Black Ops One";
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#shoptitle p{
+    font-size: 1rem;
+    font-family: "Kanit";
+}
+
 .shop_container{
     display: flex;
     justify-content: center;
@@ -109,16 +134,102 @@ section#hometitle{
     border-radius: 15px;
     text-align: center;
     align-content: center;
-    background-color: aliceblue;
-    color: black;
+    background-color: rgb(8, 53, 92);
+    color: rgb(255, 255, 255);
     font-size: 20px;
     overflow: hidden;
+    font-family: "Kanit";
 }
 
 .product img{
     max-width: 100%;
     margin: 0.5rem;
     border-radius: 15px;
+}
+
+/* SLIDESHOW */
+
+#slide_container{
+    max-width: 800px;
+    position: relative;
+    background-color: black;
+    border-radius: 20px;
+
+}
+
+.minijefe_product_box{
+    display: flexbox;
+    align-self: center;
+    width: 70%;
+    align-content: space-between;
+    box-shadow:0px 7px 7px rgba( 0, 0, 0, 0.5);
+    background-color: rgb(14, 26, 95);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.slide-element-1{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.slide-element-2, 
+
+.slide-element-3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.slide-image {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 10 px;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    font-size: 2em;
+    text-shadow: 2px 2px 2px black;
+    font-family: "Kanit";
+}
+
+.slide-element-1{
+    animation: fade-1 var(--slide-time) infinite;
+}
+.slide-element-2{
+    animation: fade-2 var(--slide-time) infinite;
+}
+.slide-element-3{
+    animation: fade-3 var(--slide-time) infinite;
+}
+
+@keyframes fade-1 {
+    0% {opacity: 1;}
+    33%{opacity: 0;}
+    66%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes fade-2 {
+    0% {opacity: 0;}
+    33%{opacity: 1;}
+    66%{opacity: 0;}
+    100%{opacity: 0;}
+}
+
+@keyframes fade-3 {
+    0% {opacity: 0;}
+    33%{opacity: 0;}
+    66%{opacity: 1;}
+    100%{opacity: 0;}
 }
 
 /*  FAQ  */
