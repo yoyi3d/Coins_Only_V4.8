@@ -159,12 +159,6 @@ section#shoptitle{
 
 /* SLIDESHOW */
 
-#fakebutton{
-    width: 12%;
-    height: 30%;
-    animation: fade-jefe var(--slide-time) infinite;
-}
-
 #fakebutton1{
     width: 12%;
     height: 30%;
