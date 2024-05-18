@@ -150,7 +150,9 @@ section#shoptitle{
 
 /* SLIDESHOW */
 
-#slide_container{
+
+
+/* #slide_container{
     max-width: 800px;
     position: relative;
     background-color: black;
@@ -231,7 +233,7 @@ section#shoptitle{
     33%{opacity: 0;}
     66%{opacity: 1;}
     100%{opacity: 0;}
-}
+} */
 
 /*  FAQ  */
 
