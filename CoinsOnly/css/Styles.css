@@ -533,6 +533,7 @@ section#cartas{
     overflow: hidden;
     transition: 1s;
 }
+
 .card .front{
     transform: perspective(600px) rotateY(0deg);
     box-shadow: 0 5px 10px #000;
@@ -544,6 +545,14 @@ section#cartas{
     height: 100%;
     object-fit: cover;
 }
+
+.card .back img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .card .back{
     transform: perspective(600px) rotateY(180deg);
 }
