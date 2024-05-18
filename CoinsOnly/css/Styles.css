@@ -27,11 +27,12 @@ body {
 /* NAVEGADOR */
 
 li, a{
-    font-family: "Source Code Pro", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 18px;
     text-decoration: none;
     color: #edf0f1;
+    cursor: url(../media/img/Cursor\ apunta.png), auto;
 }
 
 header{
@@ -46,10 +47,6 @@ header{
 img.logo{
     width: auto;
     height: 15vh;
-}
-
-.logo{
-    cursor: pointer;
 }
 
 .nav_links{
@@ -67,7 +64,11 @@ img.logo{
 }
 
 .nav_links li a:hover{
-    color: #0088a9;
+    color: #AEDB6B;
+    transform: scale(1.6);
+    -webkit-transform: scale(1.6);
+    -ms-transform: scale(1.6);
+    
 }
 
 /* DROPDOWN */
