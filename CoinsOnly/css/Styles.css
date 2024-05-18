@@ -98,6 +98,15 @@ section#hometitle{
 
 /* SHOP */
 
+#shoptitle {
+    color: white;
+    text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;  
+}
+
 #shop{
     padding: 1rem;
 }
@@ -131,11 +140,11 @@ section#shoptitle{
 }
 
 .product{
-    box-shadow:0px 7px 7px rgba( 0, 0, 0, 0.5);
+    box-shadow:0px 100px 100px rgba( 0, 0, 0, 0.5);
     border-radius: 15px;
     text-align: center;
     align-content: center;
-    background-color: rgb(8, 53, 92);
+    background-color: rgb(5, 26, 45);
     color: rgb(255, 255, 255);
     font-size: 20px;
     overflow: hidden;
@@ -149,6 +158,31 @@ section#shoptitle{
 }
 
 /* SLIDESHOW */
+
+#fakebutton{
+    width: 12%;
+    height: 30%;
+    animation: fade-jefe var(--slide-time) infinite;
+}
+
+#fakebutton1{
+    width: 12%;
+    height: 30%;
+    animation: fade-jefe var(--slide-time) infinite;
+}
+
+@keyframes fade-jefe {
+    0% {opacity: 1;}
+    10%{opacity: 0;}
+    20%{opacity: 0;}
+    40%{opacity: 0;}
+    50%{opacity: 0;}
+    60%{opacity: 0;}
+    70%{opacity: 0;}
+    80%{opacity: 0;}
+    90%{opacity: 0;}
+    100%{opacity: 1;}
+}
 
 #slide_container{
     max-width: 800px;
@@ -167,6 +201,8 @@ section#shoptitle{
     background-color: rgb(14, 26, 95);
     border-radius: 15px;
     text-align: center;
+    margin-bottom: 4vh;
+    padding-bottom: 6vh;
 }
 
 .slide-element-1{
