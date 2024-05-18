@@ -39,56 +39,63 @@
         position: fixed;
         z-index: 9999; 
         }
+        #fakebutton2 {
+        position: fixed;
+        z-index: 9999; 
+        }
+        #fakebutton1 {
+        position: fixed;
+        z-index: 9999; 
+        }
     </style>
 
     <img id="fakebutton" src="media/image/shop/popup.PNG" alt="Esto es un POPUP">
     <img id="fakebutton1" src="media/image/shop/popup_2.PNG" alt="Esto es un POPUP2">
-    <img id="fakebutton2" src="media/image/shop/popup_3.PNG" alt="Esto es un POPUP">
+    <img id="fakebutton2" src="media/image/shop/popup_3.PNG" alt="Esto es un POPUP3">
 
     <script>
         const f = document.getElementById("fakebutton");
     
         function randomizeInterval() {
-        return Math.floor(Math.random() * (5000 - 500 + 1)) + 100; 
+        return Math.floor(Math.random() * (5000)); 
         }
     
         setInterval(() => {
-        // Change position
         const clientX = Math.random() * window.innerWidth;
         const clientY = Math.random() * window.innerHeight;
-        f.style.transform = `translateY(${clientY - 25}px) translateX(${clientX - 25}px)`;
-        }, randomizeInterval()); // Initial random time interval
+        f.style.transform = `translateY(${clientY - 100}px) translateX(${clientX - 100}px)`;
+        }, randomizeInterval()); 
   
     </script>
 
 <script>
-    const f = document.getElementById("fakebutton1");
+    const f2 = document.getElementById("fakebutton1");
 
     function randomizeInterval() {
-    return Math.floor(Math.random() * (5000 - 500 + 1)) + 100; 
+        return Math.floor(Math.random() * (5000)); 
     }
 
     setInterval(() => {
     // Change position
     const clientX = Math.random() * window.innerWidth;
     const clientY = Math.random() * window.innerHeight;
-    f.style.transform = `translateY(${clientY - 25}px) translateX(${clientX - 25}px)`;
+    f2.style.transform = `translateY(${clientY - 100}px) translateX(${clientX - 100}px)`;
     }, randomizeInterval()); // Initial random time interval
 
 </script>
 
 <script>
-    const f = document.getElementById("fakebutton2");
+    const f3 = document.getElementById("fakebutton2");
 
     function randomizeInterval() {
-    return Math.floor(Math.random() * (5000 - 500 + 1)) + 100; 
+        return Math.floor(Math.random() * (5000)); 
     }
 
     setInterval(() => {
     // Change position
     const clientX = Math.random() * window.innerWidth;
     const clientY = Math.random() * window.innerHeight;
-    f.style.transform = `translateY(${clientY - 25}px) translateX(${clientX - 25}px)`;
+    f3.style.transform = `translateY(${clientY - 100}px) translateX(${clientX - 100}px)`;
     }, randomizeInterval()); // Initial random time interval
 
 </script>
@@ -104,49 +111,29 @@
     
                     <div class="slide-element-1">
                         <img class="slide-image" src="https://picsum.photos/720/360">
-                        <p class="slide-text">Slide text 1</p>
+                        <p class="slide-text">COMPRA TODO EL MERCH QUE TENEMOS</p>
                     </div>
     
                     <div class="slide-element-2">
                         <img class="slide-image" src="https://picsum.photos/720/360">
-                        <p class="slide-text">Slide text 2</p>
+                        <br>
+                        <br>
+                        <p class="slide-text">TODO EL MERCH DEBE SER COMPRADO</p>
                     </div>
     
                     <div class="slide-element-3">
                         <img class="slide-image" src="https://picsum.photos/720/360">
-                        <p class="slide-text">Slide text 3</p>
+                        <br>
+                        <br>
+                        <br>
+                        <p class="slide-text">YA DEBERÍAS HABERLO COMPRADO</p>
                     </div>
                     
-            </div>
-    
-
-            <!-- <section class="home">
-                <div class="slider-wrapper">
-                    <img src="https://picsum.photos/id/256/200/540" alt="txt">
-                    <div class="slider">
-                        <iframe id="slide-1" src="https://www.youtube.com/embed/FFLkQenGZSY?si=YR8UHJiEwUjEGwBj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <img id="slide-2" src="https://picsum.photos/id/2/960/540" alt="...">
-                        <img id="slide-3" src="https://picsum.photos/id/3/960/540" alt="...">
-                        <img id="slide-4" src="https://picsum.photos/id/4/960/540" alt="...">
-                        <img id="slide-5" src="https://picsum.photos/id/5/960/540" alt="...">
-                    </div>
-                    
-                    <div class="slider-nav">
-                        <a href="#slide-1"></a>
-                        <a href="#slide-2"></a>
-                        <a href="#slide-3"></a>
-                        <a href="#slide-4"></a>
-                        <a href="#slide-5"></a>
-                    </div>
-                    <img src="https://picsum.photos/id/256/200/540" alt="text">
-                </div>
-     -->
-            
-            </section>
+            </div>            
+        </section>
 
 
-            </section>
-            </div>
+        <h4></h4>
 
             <br>
             <br>
