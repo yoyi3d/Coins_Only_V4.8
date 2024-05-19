@@ -43,7 +43,7 @@ header{
     justify-content: center;
     gap: 5rem;
     align-items: center;
-    padding: 10px
+    padding: 10px;
     background: rgb(0,252,255);
     background: linear-gradient(0deg, rgba(0,252,255,0) 0%, rgba(0,0,0,1) 100%);
 }
