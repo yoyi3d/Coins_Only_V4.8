@@ -203,7 +203,7 @@ img.logo:hover{
 }
 
 .gamedesc a:hover{
-    background-color: #433c81;
+    background-color: #4E5DBE;
 }
 
 .carrusel{
@@ -308,7 +308,7 @@ section#shoptitle{
     width: auto; 
     align-content: space-between;
     box-shadow:0px 7px 7px rgba( 0, 0, 0, 0.5);
-    background-color: rgb(14, 26, 95);
+    background-color: rgb(5, 26, 45);
     border-radius: 15px;
     text-align: center;
     margin-bottom: 4vh;
@@ -422,7 +422,7 @@ section#faq_main{
     font-size: 3rem;
     margin-bottom: 1rem;
     text-align: center;
-    color: #FF8A00;
+    color: #D5AA6E;
     font-family: "Girassol";
 }
 
@@ -448,7 +448,7 @@ section#faq_main{
 
 #main_faq a{
     text-align: center;
-    color: #ff8800;
+    color: #D5AA6E;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 0.5em;
@@ -471,9 +471,10 @@ section#faq_main{
     margin: auto;
     margin-bottom: 50px;
     display: flex;
-    background-color: #46607a;
+    background-color: #1D4055;
     padding: 30px;
     margin-top: 50px;
+    border: 0.3em solid white;
     border-radius: 10px;
     box-shadow: 10px 23px 37px black;
     flex-direction: column;
@@ -504,7 +505,7 @@ section#faq_main{
     margin-bottom: 10px;
     border-radius: 5px;
     width: 100%;
-    background-color: #374a5e;
+    background-color: #112732;
     border: 0.1em solid white;
     color: white;
     resize: vertical;
@@ -513,7 +514,7 @@ section#faq_main{
 
 .enviar_button{
     width: 100%;
-    background-color: #5380b1;
+    background-color: #6b92db;
     padding: 10px;
     color: white;
     border: none;
@@ -521,7 +522,7 @@ section#faq_main{
 }
 
 .enviar_button:hover{
-    background-color: #486e97;
+    background-color: #4E5DBE;
 }
 
 @media only screen and (max-width: 450px){
