@@ -381,7 +381,7 @@ section#shoptitle{
 
 /*  FAQ  */
 
-section#faq_main{
+section#faq_main {
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -389,10 +389,9 @@ section#faq_main{
     justify-content: center;
     text-align: center;
     color: white;
-    
 }
 
-#main_faq{
+#main_faq {
     background-image: url(../Media/Image/Pizarra.png);
     border-radius: 15px;
     padding: 1rem;
@@ -407,6 +406,14 @@ section#faq_main{
     display: flex;
     align-content: center;
     gap: 1rem;
+    width: 100%;
+}
+
+.columnas_faq .columna {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media screen and (max-width: 1150px) {
@@ -414,11 +421,10 @@ section#faq_main{
         flex-direction: column;
         align-items: center;
         gap: 2rem;
-        display: flex;
     }
 }
 
-#main_faq h1{
+#main_faq h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -426,7 +432,7 @@ section#faq_main{
     font-family: "Girassol";
 }
 
-#main_faq h2{
+#main_faq h2 {
     font-size: 2rem;
     margin-top: 1rem;
     color: rgb(255, 255, 255);
@@ -437,7 +443,7 @@ section#faq_main{
     font-family: "Kanit";
 }
 
-#main_faq p{
+#main_faq p {
     text-align: center;
     color: rgb(255, 255, 255);
     padding-left: 20px;
@@ -446,7 +452,7 @@ section#faq_main{
     font-family: "Source Code Pro";
 }
 
-#main_faq a{
+#main_faq a {
     text-align: center;
     color: #D5AA6E;
     padding-left: 20px;
@@ -455,7 +461,7 @@ section#faq_main{
     font-family: "Kanit";
 }
 
-#main_faq a:hover{
+#main_faq a:hover {
     text-align: center;
     color: #dd7600;
     padding-left: 20px;
