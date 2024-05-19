@@ -488,9 +488,7 @@ section#faq_main {
     box-shadow: 10px 23px 37px black;
     flex-direction: column;
     align-items: center;
-    display: flexbox;
-    align-self: ;
-
+    display: flex;
 }
 
 .main_formulario h1{
@@ -545,6 +543,7 @@ section#faq_main {
     }
     
 }
+
 /* ABOUT US */
 section#creditos{
     display: flex;
@@ -601,9 +600,9 @@ section#creditos{
 
 .creditscard .back h1{
     font-family: "Girassol";
-    align-items: center;
+    justify-content: center;
     display: flex;
-    height: 45%;
+    margin-top: 1.5em;
     width: 70%;
     font-size: 35px;
 }
@@ -613,7 +612,7 @@ section#creditos{
     padding: 0.5em;
     font-family: "Kanit";
     width: 30%;
-    margin: 1em;
+    margin: 0.2em;
     color: black;
     border-radius: 15px;
 }
@@ -689,4 +688,74 @@ section#cartas{
 .card:hover .back{
     transform: perspective(600px) rotateY(360deg);
 }
- 
+
+/* FOOTER */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.7287289915966386) 25%, rgba(0,212,255,0) 100%);
+    margin-top: 5rem;
+}
+
+.footer .social_media{
+    display: flex;
+    width: 33%;
+    justify-content: space-around;
+    padding: 1.5rem;
+    color: #6b92db;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social_media div{
+    display: flex;
+    gap: 1rem;
+}
+
+.social_media div i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyr{
+    display: flex;
+    gap: 1em;
+    color: rgb(255, 255, 255);
+    font-family: "Source Code Pro";
+    font-size: 12px;
+    margin-bottom: 1em;
+}
+
+
+.footer .copyr i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyr p{
+    width: 100%;
+    font-family: "Source Code Pro";
+    margin: 0;
+    text-align: center;
+}
+
+.footer a{
+    display: flex;
+    flex: row;
+    gap: 1em;
+    font-family: "Source Code Pro";
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    color: #edf0f1;
+}
+
+.footer a:hover{
+    color:#6b92db;
+}
