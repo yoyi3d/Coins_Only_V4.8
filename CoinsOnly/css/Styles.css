@@ -40,7 +40,8 @@ li, a{
 
 header{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 5rem;
     align-items: center;
     padding: 10px
     background: rgb(0,252,255);
