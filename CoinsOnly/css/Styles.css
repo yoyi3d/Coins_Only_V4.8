@@ -571,12 +571,12 @@ section#creditos{
 }
 
 .creditscard .front{
-    transform: perspective(600px) rotateY(180deg);
+    transform: perspective(600px) rotateY(0deg);
     box-shadow: 0 5px 10px #000;
 }
 
 .creditscard .back{
-    transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(180deg);
 }
 
 .creditscard .front img{
@@ -623,15 +623,15 @@ section#creditos{
 
 .creditscard .back h3, p{
     font-family: "Kanit";
-    margin-top: 1em;
+    margin-top: 0.3em;
 }
 
 .creditscard:hover .front{
-    transform: perspective(600px) rotateY(360deg);
+    transform: perspective(600px) rotateY(180deg);
 }
 
 .creditscard:hover .back{
-    transform: perspective(600px) rotateY(180deg);
+    transform: perspective(600px) rotateY(360deg);
 }
 
 /* CARTAS */
@@ -738,6 +738,7 @@ section#cartas{
     justify-content: center;
     align-items: center;
 }
+
 .copyr p{
     width: 100%;
     font-family: "Source Code Pro";
@@ -758,4 +759,34 @@ section#cartas{
 
 .footer a:hover{
     color:#6b92db;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 414px){
+
+    /* NAVEGADOR  */
+
+
+    /* HOME */
+
+
+
+    /* CARTAS */
+
+
+
+    /* CONTACT */
+
+
+
+    /* FAQ */
+
+
+
+    /* SHOP */
+
+
+
 }
