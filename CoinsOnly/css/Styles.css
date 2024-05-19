@@ -546,122 +546,93 @@ section#faq_main {
     
 }
 /* ABOUT US */
-
-#main_about_us {
-    padding: 1rem;
+section#creditos{
     display: flex;
-    color: white; 
-}
-
-#about_us {
-    border-radius: 15px;
-    padding: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
     margin: 3rem;
-    gap: 0.5rem;
-    flex: 1;
-    display: flex;
 }
 
-.columnas_about_us {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.row1, .row2 {
-    display: flex;
-    gap: 1rem;
-}
-
-.victor, .aster, .yoyi, .miguel, .samu, .david {
-    flex: 1;
+.creditscard{
     position: relative;
+    width: 462px;
+    height: 486px;
+}
+
+.creditscard .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.creditscard .front{
+    transform: perspective(600px) rotateY(180deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.creditscard .back{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.creditscard .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.creditscard .back {
+    background-image: url(../media/Image/credits/painting_back.png);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 40px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
 }
 
-.textos {
-    margin-left: 20px;
-}
-
-.texto_nombre, .texto_descripcion {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
+.creditscard .back h1{
+    font-family: "Girassol";
+    align-items: center;
     display: flex;
-    flex-direction: column;
+    height: 45%;
+    width: 70%;
+    font-size: 35px;
 }
 
-.texto_descripcion {
-    margin-top: 15px;
+.creditscard .back a{
+    background-color: #00000052;
+    padding: 0.5em;
+    font-family: "Kanit";
+    width: 30%;
+    margin: 1em;
+    color: black;
+    border-radius: 15px;
 }
 
-.texto_nombre{
+.creditscard .back a:Hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.creditscard .back h3, p{
+    font-family: "Kanit";
     margin-top: 1em;
 }
 
-#about_us a:hover{
-    color: #dd7600;
-    text-decoration: underline;
+.creditscard:hover .front{
+    transform: perspective(600px) rotateY(360deg);
 }
 
-/* FOOTER */
-
-footer{
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    height: 3rem;
-    padding-bottom: 2.5rem;
-}
-
-.Footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,0.7287289915966386) 25%, rgba(0,212,255,0) 100%);
-    margin-top: 5rem;
-}
-
-.Footer .social_media{
-    display: flex;
-    width: 33%;
-    justify-content: space-around;
-    padding: 1.5rem;
-    color: #6b92db;
-    margin-top: 2rem;
-}
-
-.social_media div{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.Footer .copyr{
-    display: flex;
-    gap: 1em;
-    color: rgb(255, 255, 255);
-    font-family: "Source Code Pro";
-    font-size: 12px;
-    margin-bottom: 1em;
-}
-
-.Footer a{
-    font-family: "Source Code Pro";
-    font-weight: 500;
-    font-size: 18px;
-    text-decoration: none;
-    color: #edf0f1;
-}
-
-.Footer a:hover{
-    color:#6b92db;
-
+.creditscard:hover .back{
+    transform: perspective(600px) rotateY(180deg);
 }
 
 /* CARTAS */
