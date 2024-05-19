@@ -477,6 +477,8 @@ section#faq_main {
     width: 400px;
     margin: auto;
     margin-bottom: 50px;
+    margin-bottom: 50px;
+    display: flex;
     display: flex;
     background-color: #1D4055;
     padding: 30px;
@@ -486,6 +488,8 @@ section#faq_main {
     box-shadow: 10px 23px 37px black;
     flex-direction: column;
     align-items: center;
+    display: flexbox;
+    align-self: ;
 
 }
 
