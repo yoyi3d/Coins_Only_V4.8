@@ -47,6 +47,15 @@ header{
     width: 100%;
 }
 
+#menuToggle, .menu-icon{
+    display: none;
+}
+
+.menu-opt{
+    display: none;
+}
+
+
 img.logo{
     height: 15vh;
 }
@@ -418,14 +427,6 @@ section#faq_main {
     align-items: center;
 }
 
-@media screen and (max-width: 1150px) {
-    .columnas_faq {
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-    }
-}
-
 #main_faq h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -555,13 +556,6 @@ section#faq_main {
 
 .enviar_button:hover{
     background-color: #4E5DBE;
-}
-
-@media only screen and (max-width: 450px){
-    
-    #formulario{
-        flex-direction: column;
-    }
 }
 
 
@@ -895,10 +889,17 @@ section#cartas{
 
     /* FAQ */
 
-
+    .columnas_faq {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
 
     /* SHOP */
 
+    #fakebutton1{
+        display: none;
+    }
 
     /* FOOTER */
 
@@ -1004,7 +1005,9 @@ section#cartas{
 
     /* FAQ */
 
-
+    #formulario{
+        flex-direction: column;
+    }
 
     /* SHOP */
 
