@@ -312,7 +312,7 @@ section#shoptitle{
 }
 
 .minijefe_product_box{
-    display: flexbox;
+    display: flex;
     align-self: center;
     width: auto; 
     align-content: space-between;
@@ -391,7 +391,7 @@ section#shoptitle{
 /*  FAQ  */
 
 section#faq_main {
-    padding: 1rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -401,22 +401,24 @@ section#faq_main {
 }
 
 #main_faq {
-    background-image: url(../Media/Image/Pizarra.png);
-    border-radius: 15px;
-    padding: 1rem;
-    margin: 3rem;
     display: flex;
     flex-direction: column;
+    width: 90%;
+    border-radius: 15px;
     gap: 0.5rem;
-    box-shadow: 5px 17px 37px black;
     border: 0.7em solid rgb(139, 120, 57);
+    background-image: url(../Media/Image/Pizarra.png);
+    box-shadow: 5px 17px 37px black;
 }
 
 .columnas_faq {
     display: flex;
     align-content: center;
+    justify-content: space-around;
     gap: 1rem;
-    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 95%;
 }
 
 .columnas_faq .columna {
@@ -472,20 +474,21 @@ section#faq_main {
     text-decoration: underline;
 }
 
+
 /* Formulario */
 #formulario{
     display: flex;
     width: 90%;
     align-items: center;
+    flex-direction: row;
     justify-content: space-around;
     margin-left: 5%;
     margin-right: 5%;
-    flex-direction: column;
+
 }
 
 .main_formulario{
-    width: 50%;
-    /* margin: auto; */
+    width: 25%;
     margin-bottom: 50px;
     display: flex;
     background-color: #1D4055;
@@ -909,6 +912,19 @@ section#cartas{
         gap: 2rem;
     }
 
+    #formulario{
+        flex-direction: column;
+    }
+
+    .main_formulario{
+        width: 95%;
+    }
+
+    #formulario .maps{
+        width: 95%;
+
+    }
+
     /* SHOP */
 
     #fakebutton1{
@@ -1019,6 +1035,19 @@ section#cartas{
 
     #formulario{
         flex-direction: column;
+    }
+
+    #formulario{
+        flex-direction: column;
+    }
+
+    .main_formulario{
+        width: 95%;
+    }
+
+    #formulario .maps{
+        width: 95%;
+
     }
 
     /* SHOP */
