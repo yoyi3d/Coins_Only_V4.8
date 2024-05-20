@@ -662,13 +662,14 @@ section#cartas{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 .card{
     position: relative;
     width: 375px;
     height: 525px;
+    margin-bottom: 2rem;
 }
 
 .card .face{
@@ -712,7 +713,7 @@ section#cartas{
 
 /* FOOTER */
 
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -721,7 +722,7 @@ section#cartas{
     margin-top: 5rem;
 }
 
-.footer .social_media{
+.footer .social_media {
     display: flex;
     justify-content: space-around;
     padding: 1.5rem;
@@ -729,21 +730,23 @@ section#cartas{
     margin-top: 2rem;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 3rem;
 }
 
-.social_media div{
+.social_media div {
     display: flex;
+    align-items: center;
     gap: 1rem;
 }
 
-.social_media div i{
+.social_media div i {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 24px;
 }
 
-.copyr{
+.copyr {
     display: flex;
     gap: 1em;
     color: rgb(255, 255, 255);
@@ -752,21 +755,20 @@ section#cartas{
     margin-bottom: 1em;
 }
 
-
-.footer .copyr i{
+.footer .copyr i {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.copyr p{
+.copyr p {
     width: 100%;
     font-family: "Source Code Pro";
     margin: 0;
     text-align: center;
 }
 
-.footer a{
+.footer a {
     display: flex;
     flex: row;
     gap: 1em;
@@ -777,20 +779,17 @@ section#cartas{
     color: #edf0f1;
 }
 
-.footer a:hover{
-    color:#6b92db;
+.footer a:hover {
+    color: #6b92db;
 }
 
-#menuToggle, .menu-icon{
-    display: none;
-}
 
-.menu-opt{
-    display: none;
-}
+/* MEDIA QUERIES */
 
-@media screen and (max-width: 800px) {
-    header{
+@media only screen and (max-width: 800px){
+
+    /* NAVEGADOR  */
+	header{
         display: flex;
         justify-content: left;
         gap: 5%;
@@ -818,9 +817,6 @@ section#cartas{
         top: 0;
         right: 0;
         margin: 50px;
-       
-
-}
     }
     
     .menu-opt {
@@ -847,33 +843,50 @@ section#cartas{
         max-height: 500px; /* Ajusta esto según el contenido real */
         opacity: 1;
     }
-    
-    
 
-
-
-/* MEDIA QUERIES */
-
-@media only screen and (max-width: 414px){
-
-    /* NAVEGADOR  */
-    header {
-        display: flex;
-        justify-content: left;
-        align-items: center; /* Asegúrate de alinear los elementos */
-        padding: 5px; /* Opcional: ajustar el padding del header */
-    }
-    .logo img { 
-        height: 20; /* Mantén la proporción de la imagen */
-        width: 10%; /* Ajusta el tamaño de la imagen */
-        max-width: 20px; /* Tamaño máximo opcional */
-    }
     /* HOME */
+    .home {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .slider-wrapper {
+        max-width: 90%;
+        width: 90%;
+    }
+
+    .slider-nav {
+        bottom: -2rem;
+    }
+
+    .gamedesc {
+        max-width: 90%;
+        width: 90%;
+        margin-top: 6rem;
+    }
+
+    .gamedesc h1 {
+        font-size: 36px;
+    }
+
+    .gamedesc p {
+        font-size: 14px;
+        line-height: 1.4rem;
+    }
+
+    .gamedesc a {
+        width: 50%;
+        font-size: 14px;
+    }
 
 
 
     /* CARTAS */
-
+    section#cartas {
+        margin-top: 0; 
+        flex-direction: column; 
+        align-items: center; 
+    }
 
 
     /* CONTACT */
@@ -887,5 +900,119 @@ section#cartas{
     /* SHOP */
 
 
+    /* FOOTER */
+
+    .social_media a {
+        display: none;
+    }
+
+    .social_media div {
+        cursor: pointer;
+    }
+
+    .social_media div i:hover {
+        color: #ddd;
+    }
+
+    .copyr p, .footer .copyr i.fi.fi-br-circle-c {
+        display: none; 
+    }
+
+
+}
+
+@media only screen and (max-width: 400px){
+
+    /* NAVEGADOR  */
+    header {
+        display: flex;
+        justify-content: left;
+        align-items: center; /* Asegúrate de alinear los elementos */
+        padding: 5px; /* Opcional: ajustar el padding del header */
+    }
+    .logo img { 
+        height: 20; /* Mantén la proporción de la imagen */
+        width: 10%; /* Ajusta el tamaño de la imagen */
+        max-width: 20px; /* Tamaño máximo opcional */
+    }
+
+    /* HOME */
+    .home {
+        margin-top: 1rem;
+    }
+
+    .slider-wrapper, .gamedesc {
+        max-width: 90%;
+        width: 90%;
+    }
+
+    .slider-nav {
+        bottom: -2rem;  
+    }
+
+    .gamedesc {
+        margin-top: 6rem;  
+    }
+
+    .gamedesc h1 {
+        font-size: 24px;
+    }
+
+    .gamedesc p {
+        font-size: 12px;
+        line-height: 1.2rem;
+        padding: 0.5rem;
+    }
+
+    .gamedesc a {
+        width: 75%;
+        font-size: 12px;
+        padding: 0.5rem;
+    }
+    
+
+    /* CARTAS */
+    .card{
+        width: 281.25px; 
+        height: 393.75px; 
+    }
+
+    /* CONTACT */
+    section#creditos{
+        gap: 1rem;
+        margin: 1rem;
+    }
+    .creditscard{
+        max-width: 346.5px; 
+        max-height: 364.5px; 
+    }
+    
+    .creditscard .front img{
+        width: 100%;
+        height: 100%; 
+    }
+    
+    .creditscard .back h1{
+        font-size: 25px;
+    }
+    
+    .creditscard .back a{
+        font-size: 10px;
+    }
+
+
+
+    /* FAQ */
+
+
+
+    /* SHOP */
+
+
+    /* FOOTER */
+    .social_media {
+        flex-direction: row;
+        gap: 3rem;
+    }
 
 }
