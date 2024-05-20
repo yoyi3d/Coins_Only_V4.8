@@ -42,7 +42,6 @@ header{
     justify-content: center;
     gap: 5%;
     align-items: center;
-    padding: 1em;
     background: linear-gradient(0deg, rgba(0,252,255,0) 0%, rgba(0,0,0,1) 100%);
     width: 100%;
 }
@@ -321,8 +320,8 @@ section#shoptitle{
     background-color: rgb(5, 26, 45);
     border-radius: 15px;
     text-align: center;
-    margin-bottom: 4vh;
-    padding-bottom: 6vh;
+    margin-bottom: 4em;
+    padding-bottom: 4.2em;
 }
 
 .slide-element-1{
@@ -603,13 +602,13 @@ section#creditos{
 
 .creditscard .back {
     background-image: url(../media/Image/credits/painting_back.png);
+    background-size: cover; 
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
     text-align: center;
 }
 
@@ -834,7 +833,7 @@ section#cartas{
     }
     
     #menuToggle:checked ~ .menu-opt {
-        max-height: 500px; /* Ajusta esto según el contenido real */
+        max-height: 500px;
         opacity: 1;
     }
 
@@ -885,6 +884,21 @@ section#cartas{
 
     /* CONTACT */
 
+    .creditscard {
+        width: 350px;
+        height: 370px;
+    }
+    .creditscard .back h1{
+        font-size: 25px;
+    }
+
+    .creditscard .back a{
+        font-size: 15px;
+    }
+
+    .creditscard .back p{
+        font-size: 18px;
+    }
 
 
     /* FAQ */
@@ -899,6 +913,10 @@ section#cartas{
 
     #fakebutton1{
         display: none;
+    }
+
+    .minijefe_product_box{
+        margin: 2em;
     }
 
     /* FOOTER */
@@ -918,23 +936,21 @@ section#cartas{
     .copyr p, .footer .copyr i.fi.fi-br-circle-c {
         display: none; 
     }
-
-
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 414px){
 
     /* NAVEGADOR  */
     header {
         display: flex;
         justify-content: left;
-        align-items: center; /* Asegúrate de alinear los elementos */
-        padding: 5px; /* Opcional: ajustar el padding del header */
+        align-items: center;
+        padding: 5px;
     }
     .logo img { 
-        height: 20; /* Mantén la proporción de la imagen */
-        width: 10%; /* Ajusta el tamaño de la imagen */
-        max-width: 20px; /* Tamaño máximo opcional */
+        height: 20;
+        width: 10%;
+        max-width: 20px;
     }
 
     /* HOME */
@@ -983,25 +999,21 @@ section#cartas{
         gap: 1rem;
         margin: 1rem;
     }
-    .creditscard{
-        max-width: 346.5px; 
-        max-height: 364.5px; 
+    .creditscard {
+        width: 250px;
+        height: 270px;
     }
-    
-    .creditscard .front img{
-        width: 100%;
-        height: 100%; 
-    }
-    
     .creditscard .back h1{
-        font-size: 25px;
+        font-size: 16px;
     }
-    
+
     .creditscard .back a{
         font-size: 10px;
     }
 
-
+    .creditscard .back p{
+        font-size: 12px;
+    }
 
     /* FAQ */
 
