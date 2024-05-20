@@ -43,7 +43,6 @@ header{
     gap: 5%;
     align-items: center;
     padding: 1em;
-    background: rgb(0,252,255);
     background: linear-gradient(0deg, rgba(0,252,255,0) 0%, rgba(0,0,0,1) 100%);
     width: 100%;
 }
@@ -791,6 +790,18 @@ section#cartas{
 }
 
 @media screen and (max-width: 800px) {
+    header{
+        display: flex;
+        justify-content: left;
+        gap: 5%;
+        align-items: center;
+        padding: 1em;
+        background: linear-gradient(0deg, rgba(0,252,255,0) 0%, rgba(0,0,0,1) 100%);
+        width: 100%;
+    
+    }
+    
+    
     .nav_links {
         display: none;
     }
@@ -807,12 +818,16 @@ section#cartas{
         top: 0;
         right: 0;
         margin: 50px;
+       
+
+}
     }
     
     .menu-opt {
-        display: none;
+        display: flex;
         flex-direction: column;
-        max-height: 0px;
+        max-height: 0;
+        opacity: 0;
         overflow: hidden;
         position: absolute;
         top: 40px;
@@ -824,14 +839,17 @@ section#cartas{
         border-radius: 10px;
         font-size: 2em;
         border: 3px solid white;
-        z-index: 99999; 
+        z-index: 99999;
+        transition: max-height 1s ease, opacity 1s ease;
     }
     
     #menuToggle:checked ~ .menu-opt {
-        display: flex;
-        max-height: 350px;
+        max-height: 500px; /* Ajusta esto según el contenido real */
+        opacity: 1;
     }
-}
+    
+    
+
 
 
 /* MEDIA QUERIES */
@@ -839,8 +857,17 @@ section#cartas{
 @media only screen and (max-width: 414px){
 
     /* NAVEGADOR  */
-
-
+    header {
+        display: flex;
+        justify-content: left;
+        align-items: center; /* Asegúrate de alinear los elementos */
+        padding: 5px; /* Opcional: ajustar el padding del header */
+    }
+    .logo img { 
+        height: 20; /* Mantén la proporción de la imagen */
+        width: 10%; /* Ajusta el tamaño de la imagen */
+        max-width: 20px; /* Tamaño máximo opcional */
+    }
     /* HOME */
 
 
